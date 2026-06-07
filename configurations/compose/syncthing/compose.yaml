@@ -1,0 +1,29 @@
+services:
+  syncthing:
+    image: syncthing/syncthing:latest
+    container_name: syncthing
+    restart: unless-stopped
+    # network_mode: host     # 强烈推荐局域网使用（发现效果最好），用这个时可以去掉 ports 配置
+    hostname: syncthing
+    environment:
+      # 改成你宿主机的 uid（id 命令查看）
+      - PUID=1000
+      # 改成你宿主机的 gid
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      # 允许其他主機访问 Web UI
+      - STGUIADDRESS=0.0.0.0:8384
+    volumes:
+      # 配置文件
+      - ./syncthing/config:/var/syncthing/config
+      # 同步数据目录（可按需增加多个）
+      - ./syncthing/data:/var/syncthing/data
+    ports:
+      # Web 管理界面
+      - "8384:8384"
+      # 文件传输（TCP）
+      - "22000:22000/tcp"
+      # QUIC（推荐）
+      - "22000:22000/udp"
+      # 本地发现
+      - "21027:21027/udp"

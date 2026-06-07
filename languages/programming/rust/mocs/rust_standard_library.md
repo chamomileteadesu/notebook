@@ -28,6 +28,8 @@
   - std::cell
     - RefCell
   - std::env
+  - std::any
+    - Any
 - Data structures and algorithms
   - std::str
     - `str`

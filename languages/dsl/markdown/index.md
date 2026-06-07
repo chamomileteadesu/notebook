@@ -128,8 +128,7 @@ Code:
 ```markdown
 I use rust[^1].
 
-[^1]: A language empowering everyone
-to build reliable and efficient software.More information:  <https://rust-lang.org/>
+[^1]: A programming language empowering everyone to build reliable and efficient software. More information: <https://rust-lang.org>.
 ```
 
 Effect:
