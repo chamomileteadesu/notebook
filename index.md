@@ -1,3 +1,0 @@
-# Notebook
-
-Hello, world!

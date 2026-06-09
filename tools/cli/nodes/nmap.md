@@ -1,31 +1,37 @@
 # nmap
 
-> 网络扫描和安全审计工具。
-> 更多信息：<https://manned.org/nmap>
+> Network exploration tool and security/port scanner.
+> Some features (e.g. SYN scan) activate only when `nmap` is run with root privileges.
+> More information: <https://nmap.org/book/man.html>.
 
-- 扫描主机是否在线（不进行端口扫描）：
-  `nmap -sn {{192.168.1.0/24}}`
+- Scan the top 1000 ports of a remote host with various [v]erbosity levels:
 
-- 扫描指定主机的常用 1000 个端口：
-  `nmap {{主机名}}`
+`nmap -v{{1|2|3}} {{ip_or_hostname}}`
 
-- 扫描所有 65535 个端口：
-  `nmap -p- {{主机名}}`
+- Run a ping sweep over an entire [s]ub[n]et or individual hosts very aggressively:
 
-- 扫描指定端口：
-  `nmap -p {{22,80,443}} {{主机名}}`
+`nmap -T5 -sn {{192.168.0.0/24|ip_or_hostname1,ip_or_hostname2,...}}`
 
-- 扫描并识别服务和操作系统：
-  `nmap -A {{主机名}}`
+- Enable OS detection, version detection, script scanning, and traceroute of hosts from a file:
 
-- 快速扫描（只扫描常用端口）：
-  `nmap -F {{主机名}}`
+`sudo nmap -A -iL {{path/to/file.txt}}`
 
-- 使用 TCP SYN 扫描（隐蔽扫描，需要 root）：
-  `sudo nmap -sS {{主机名}}`
+- Scan a specific list of [p]orts (use `-p-` for all ports from 1 to 65535):
 
-- 使用 UDP 扫描：
-  `sudo nmap -sU {{主机名}}`
+`nmap -p {{port1,port2,...}} {{ip_or_host1,ip_or_host2,...}}`
 
-- 扫描结果保存到文件：
-  `nmap -oN {{output.txt}} {{主机名}}`
+- Perform service and version detection of the top 1000 ports using default NSE scripts, writing results (`-oA`) to output files:
+
+`nmap -sC -sV -oA {{top-1000-ports}} {{ip_or_host1,ip_or_host2,...}}`
+
+- Scan target(s) carefully using `default and safe` NSE scripts:
+
+`nmap --script "default and safe" {{ip_or_host1,ip_or_host2,...}}`
+
+- Scan for web servers running on standard [p]orts 80 and 443 using all available `http-*` NSE scripts:
+
+`nmap --script "http-*" {{ip_or_host1,ip_or_host2,...}} -p 80,443`
+
+- Attempt evading IDS/IPS detection by using an extremely slow scan (`-T0`), [D]ecoy source addresses, [f]ragmented packets, random data and other methods:
+
+`sudo nmap -T0 -D {{decoy_ip1,decoy_ip2,...}} --source-port {{53}} -f --data-length {{16}} -Pn {{ip_or_host}}`
