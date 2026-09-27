@@ -1,0 +1,128 @@
+# Applications
+
+## Applications
+
+- AI
+  - DeepSeek Harness
+- System Tools
+  - zellij
+  - ghostty
+  - sudo-rs
+- NixOS
+  - nix
+  - home manager
+  - nix anywhere
+- Arch Linux
+  - paru
+- Debug
+  - Hardware Debug
+    - OpenOCD
+- Development
+  - Jupyter
+    - Jupyter
+    - ipykernel
+    - jupyterlab
+    - ipywidgets
+    - tslab
+  - Computer Graphics
+    - wgpu
+    - three.js
+  - Computer Vision
+  - Web Crawler and Search Engine
+    - scapy
+  - Multimedia Development
+    - FFmpeg
+      - rust-ffmpeg
+  - AI Development
+    - llama.cpp
+    - sglang
+    - onnx
+    - safetensors
+    - scikit-learn
+    - browser-use
+  - Web Development
+    - better-auth
+    - lightningcss
+    - tailwind
+      - tailwind
+      - tailwind-merge
+      - tailwind-variants
+    - biome
+    - vite
+      - vite
+      - vite-plugin-singlefile
+    - vitest
+    - mode-watcher
+  - Big Data Development
+    - lucene
+    - etcd
+    - elasticsearch
+      - elasticsearch
+      - elasticsearch-py
+    - debezium
+    - starrocks
+    - iceberg
+  - Containerized Development
+    - Kubernetes
+      - portainer
+    - k3s
+    - gvisor
+- Toolchain
+  - IDE Toolchain
+    - language-server-protocol
+    - debug-adapter-protocol
+  - Rust Toolchain
+    - cargo
+      - cargo-update
+      - cargo-cache
+      - cargo-binstall
+  - Typescript Toolchian
+    - swc
+    - jsdoc
+- Design
+  - ComfyUI
+- Network
+  - DNS Tools
+    - Dog
+  - Clash Verge
+  - aria2
+  - Motrix
+  - mihomo
+  - rsync
+  - nginx
+  - frr
+  - libpcap
+  - UU Accelerator
+  - Syncthing
+    - Syncthing
+    - SushiTrain
+    - SyncTrayzor
+  - Tor Browser
+  - Tailcat
+  - Localsend
+  - Bitchat
+- Storage
+  - Database
+    - SQLite
+      - rusqlite
+    - DuckDB
+      - duckdb
+      - duckdb-wasm
+      - duckdb-rs
+    - RocksDB
+      - rust-rocksdb
+    - Postgres
+      - sqlx
+      - Postgrest
+  - Object Storage
+    - rustfs
+- Essentials
+  - Espanso
+    - Espanso Lorem
+    - Espanso Mega Pack
+  - 闪电说
+- Privacy
+  - Loupe
+- Translation
+- font
+  - inter

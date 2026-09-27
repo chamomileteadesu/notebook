@@ -1,0 +1,92 @@
+# Rust Standard Library
+
+- Basic
+  - std::prelude
+  - std::mem
+  - std::cmp
+    - Eq
+    - PartialEq
+    - Ord
+    - PartialOrd
+    - Ordering
+  - std::convert
+    - From
+    - Into
+    - TryFrom
+    - TryInto
+    - AsRef
+    - AsMut
+  - std::default
+    - Default
+  - std::fmt
+    - Debug
+    - Display
+  - std::iter
+    - Iterator
+  - std::rc
+    - Rc
+  - std::cell
+    - RefCell
+  - std::env
+  - std::any
+    - Any
+- Data structures and algorithms
+  - std::str
+    - `str`
+  - std::string
+    - `String`
+  - std::vec
+    - `Vec<T>`
+  - std::collections
+    - `HashMap<K, V>`
+    - `HashSet<T>`
+    - `BTreeMap<K, V>`
+    - `BTreeSet<T>`
+    - `VecDeque<T>`
+    - `BinaryHeap<T>`
+    - `LinkedList<T>`
+- IO & files
+  - std::io
+    - Read
+    - BufRead
+    - BufReader
+    - Write
+    - BufWriter
+  - std::fs
+  - std::path
+- Networks
+  - std::net
+    - IpAddr
+      - Ipv4Addr
+      - Ipv6Addr
+    - SocketAddr
+    - SocketAddrV4
+    - SocketAddrV6
+    - TcpListener
+    - TcpStream
+    - UdpSocket
+    - ToSocketAddrs
+- Processes, Threads and Synchronization
+  - std::process
+    - Command
+  - std::thread
+  - std::sync
+    - Arc
+    - Mutex
+    - RwLock
+    - mpsc
+- Asynchronous Infrastructure
+  - std::future
+  - std::task
+  - std::pin
+- Date and time
+  - std::time
+    - SystemTime
+    - UNIX_EPOCH
+    - Instant
+    - Duration
+- Cross-language programming
+  - std::ffi
+- OS
+  - std::os::unix
+  - std::os::windows

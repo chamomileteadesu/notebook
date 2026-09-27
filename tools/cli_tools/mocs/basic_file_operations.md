@@ -1,0 +1,16 @@
+# Basic File Operations
+
+- [[cp]]
+- [[eza]]
+- [[ln]]
+- [[ls]]
+- [[readlink]]
+- [[mv]]
+- [[rm]]
+- [[rmdir]]
+- [[touch]]
+- [[basename]]
+- [[dirname]]
+- [[mkdir]]
+- [[mkfifo]]
+- [[stat]]

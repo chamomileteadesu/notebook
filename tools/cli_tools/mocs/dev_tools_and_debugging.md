@@ -1,0 +1,18 @@
+# Dev Tools and Debugging
+
+- [[addr2line]]
+- [[delta]]
+- [[diff]]
+- [[difft]]
+- [[gdb]]
+- [[hexdump]]
+- [[lazygit]]
+- [[ldd]]
+- [[nm]]
+- [[objdump]]
+- [[patch]]
+- [[readelf]]
+- [[size]]
+- [[strace]]
+- [[strings]]
+- [[xxd]]

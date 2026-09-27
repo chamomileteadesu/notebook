@@ -1,0 +1,44 @@
+services:
+  prometheus:
+    image: docker.io/prom/prometheus:latest
+    container_name: prometheus
+    restart: unless-stopped
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    ports:
+      - "9090:9090"
+    networks:
+      - monitor
+
+  grafana:
+    image: docker.io/grafana/grafana:latest
+    container_name: grafana
+    restart: unless-stopped
+    volumes:
+      - grafana-data:/var/lib/grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - monitor
+
+  node-exporter:
+    image: docker.io/prom/node-exporter:latest
+    container_name: node-exporter
+    restart: unless-stopped
+    pid: host
+    volumes:
+      - /:/host:ro,rslave
+      - /sys:/host/sys:ro
+      - /proc:/host/proc:ro
+    networks:
+      - monitor
+
+volumes:
+  prometheus-data:
+  grafana-data:
+
+networks:
+  monitor:
+    name: monitor
+    driver: bridge

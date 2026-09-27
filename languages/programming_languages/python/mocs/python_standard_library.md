@@ -1,0 +1,86 @@
+# Python Standard Library
+
+- abc
+  - ABC
+  - abstractmethod
+- typing
+  - Generic
+  - TypeVar
+  - Protocol
+  - Tuple
+  - Union
+  - List
+  - Dict
+  - Optional
+- enum
+  - Enum
+- builtins
+- keyword
+  - kwlist
+- asyncio
+- argparse
+- array
+- ast
+- base64
+- bz2
+- bisect
+- calendar
+- cmath
+- collections
+- datetime
+- dataclasses
+- decimal
+- email
+- errno
+- gc
+- gzip
+- hashlib
+- html
+- http
+- hmac
+- io
+- ipaddress
+- json
+- locale
+- logging
+- lzma
+- mailbox
+- math
+- mmap
+- mimetypes
+- multiprocessing
+- numbers
+- os
+- pathlib
+- platform
+- queue
+- random
+- re
+- secrets
+- select
+- selectors
+- signal
+- socket
+- sqlite3
+- ssl
+- stat
+- statistics
+- string
+- struct
+- subprocess
+- sys
+- sysconfig
+- time
+- threading
+- tty
+- types
+- unicodedata
+- urllib
+- uuid
+- venv
+- warnings
+- xml
+- zipapp
+- zipfile
+- zipimport
+- zoneinfo

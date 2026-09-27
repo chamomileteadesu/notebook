@@ -1,0 +1,29 @@
+services:
+  wireguard:
+    image: docker.io/linuxserver/wireguard:1.0.20250521
+    container_name: wireguard-server
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - SERVERURL=${SERVERURL}
+      - SERVERPORT=${SERVERPORT}
+      - PEERS=${PEERS}
+      - PEERDNS=8.8.8.8
+      - INTERNAL_SUBNET=10.13.13.0/24
+      - ALLOWEDIPS=10.13.13.0/24
+      - PERSISTENT_KEEPALIVE_INTERVAL=30
+    volumes:
+      - wireguard-config:/config
+    ports:
+      - "51820:51820/udp"
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: unless-stopped
+
+volumes:
+  wireguard-config:
+    driver: local

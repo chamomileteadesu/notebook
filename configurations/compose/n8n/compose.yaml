@@ -1,0 +1,34 @@
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    container_name: n8n-main
+    restart: unless-stopped
+    ports:
+      # Web UI
+      - "5678:5678"
+      # Task Broker
+      - "5679:5679"
+    environment:
+      - N8N_HOST=your-domain.com
+      - N8N_PORT=5678
+      - TZ=Asia/Shanghai
+      - GENERIC_TIMEZONE=Asia/Shanghai
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+      - N8N_RUNNERS_ENABLED=true
+      - N8N_RUNNERS_MODE=external
+      - N8N_RUNNERS_BROKER_LISTEN_ADDRESS=0.0.0.0
+      - N8N_RUNNERS_AUTH_TOKEN=your-secret-here
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+  task-runners:
+    image: docker.n8n.io/n8nio/runners:latest
+    container_name: n8n-runners
+    environment:
+      - N8N_RUNNERS_TASK_BROKER_URI=http://n8n-main:5679
+      - N8N_RUNNERS_AUTH_TOKEN=your-secret-here
+    depends_on:
+      - n8n
+
+volumes:
+  n8n_data:

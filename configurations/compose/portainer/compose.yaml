@@ -1,0 +1,30 @@
+services:
+  portainer:
+    image: docker.io/portainer/portainer-ce:2.40.0
+    container_name: portainer
+    restart: unless-stopped
+    security_opt:
+      - label=disable
+    ports:
+      # Edge Agent 通信端口
+      - "8000:8000"
+      # Web UI (HTTP)
+      - "9000:9000"
+      # Web UI (HTTPS)
+      # default to using the self-signed certificate
+      - "9443:9443"
+    volumes:
+      # - /run/podman/podman.sock:/var/run/docker.sock
+      - portainer-data:/data
+    networks:
+      - portainer
+
+volumes:
+  portainer-data:
+    name: portainer-data
+    driver: local
+
+networks:
+  portainer:
+    name: portainer
+    driver: bridge

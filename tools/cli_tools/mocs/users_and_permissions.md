@@ -1,0 +1,17 @@
+# Users and Permissions
+
+- [[chgrp]]
+- [[chmod]]
+- [[chown]]
+- [[chsh]]
+- [[groups]]
+- [[id]]
+- [[loginctl]]
+- [[passwd]]
+- [[su]]
+- [[sudo]]
+- [[useradd]]
+- [[usermod]]
+- [[w]]
+- [[who]]
+- [[whoami]]

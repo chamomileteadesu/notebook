@@ -1,0 +1,40 @@
+# Rust Crates
+
+- futures-rs
+- tracing
+- log
+- dirs-rs
+- directories-rs
+- rustls
+- toml
+- serde
+  - serde
+  - json
+- rust-csv
+- uuid
+- calamine
+- hyper
+- grpc-rust
+- rustix
+- rand
+- clap
+- rust-clippy
+- rust-bindgen
+- axum
+- libc
+- thiserror
+- tempfile
+- jiff
+- reqwest
+- tokio
+- inquire
+- ratatui
+- thiserror
+- sea-orm
+- passkey-rs
+- regex
+- divan
+- miette
+- fake-rs
+  - fake-rs library
+  - fake-rs cli

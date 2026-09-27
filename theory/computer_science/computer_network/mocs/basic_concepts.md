@@ -1,0 +1,22 @@
+# Basic Concepts
+
+- Computer Network Overview
+  - [[computer_network_definition|Computer Network Definition]]
+  - [[components_of_computer_network|Components of Computer Network]]
+  - [[functions_of_computer_network|Functions of Computer Network]]
+  - [[switching_techniques|Switching Techniques]]
+  - [[types_of_computer_networks|Types of Computer Networks]]
+  - [[computer_network_performance_metrics|Computer Network Performance Metrics]]
+  - [[computer_network_architecture|Computer Network Architecture]]
+- Some essential basic concepts of communication principles
+  - [[explanation_of_basic_terms_in_communication_theory|Communication Theory Basic Terms]]
+  - [[nyquist_theorem|Niquest's Theorem]]
+  - [[shannons_theorem|Shannon's Theorem]]
+  - [[encoding_and_decoding|Encoding and Decoding]]
+  - [[modulation_and_demodulation|Modulation and Demodulation]]
+  - [[baseband_signals|Baseband Signals]]
+  - [[broadband_signals|Broadband Signals]]
+  - [[transmission_media|Transmission Media]]
+- Expanded Concepts
+  - [[三網與四網]]
+  - [[computer_network_vs_internetwork_vs_the_internet|Computer Network vs. Internetwork vs. the Internet]]

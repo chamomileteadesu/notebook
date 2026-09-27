@@ -1,0 +1,7 @@
+services:
+  busybox:
+    image: docker.io/library/busybox:latest
+    container_name: busybox_hello-world
+    ports:
+      - "8080:8080"
+    command: sh -c "echo '<html><body><h1>Hello World from Busybox</h1></body></html>' > index.html && httpd -f -p 8080"

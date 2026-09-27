@@ -1,0 +1,37 @@
+# sed
+
+> 流式文本编辑器，常用于替换、删除、新增文件内容。  
+> 更多語法見：[[languages/domain_specific_languages/sed/index|sed 語法]]。  
+> 更多信息：<https://manned.org/sed>
+
+- 替换文本中的字符串（输出到 stdout）：
+
+  `sed 's/old/new/g' 文件`
+
+- 直接修改文件内容，并且備份源文件：
+
+  `sed -i.bak 's/old/new/g' 文件`
+
+- 删除指定行：
+
+  `sed '3d' 文件`
+
+- 删除匹配的行：
+
+  `sed '/模式/d' 文件`
+
+- 只打印匹配的行：
+
+  `sed -n '/模式/p' 文件`
+
+- 替换第 N 次匹配：
+
+  `sed 's/old/new/N' 文件`
+
+- 在匹配行前插入内容：
+
+  `sed '/模式/i 内容' 文件`
+
+- 在匹配行后追加内容：
+
+  `sed '/模式/a 内容' 文件`
