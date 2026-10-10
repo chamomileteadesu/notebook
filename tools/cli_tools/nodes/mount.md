@@ -1,6 +1,6 @@
 # mount
 
-> 挂载文件系统。  
+> 挂载文件系统。
 > 更多信息：<https://manned.org/mount>
 
 - 挂载设备到目录：

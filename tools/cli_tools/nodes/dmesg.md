@@ -1,25 +1,37 @@
 # dmesg
 
-> 显示内核环形缓冲区的信息（通常用于硬件故障诊断）。
-> 更多信息：<https://manned.org/dmesg>
+> Write the kernel messages to `stdout`.
+> See also: `journalctl`.
+> More information: <https://manned.org/dmesg>.
 
-- 显示所有内核消息：
-  `dmesg`
+- Show kernel messages:
 
-- 搜索包含特定关键字的消息：
-  `dmesg | grep -i "{{error}}"`
+`sudo dmesg`
 
-- 以人类可读的时间戳显示：
-  `dmesg -T`
+- Show kernel messages in human-readable format (equivalent of `dmesg --color --reltime` piped to a pager):
 
-- 只显示错误级别的消息：
-  `dmesg -l err`
+`sudo dmesg {{[-H|--human]}}`
 
-- 实时监控内核消息：
-  `dmesg -w`
+- Show kernel error messages:
 
-- 清空内核环形缓冲区：
-  `sudo dmesg -c`
+`sudo dmesg {{[-l|--level]}} err`
 
-- 显示最后 N 条消息：
-  `dmesg | tail -n {{N}}`
+- Show kernel messages and keep [w]aiting for new ones (similar to `tail --follow`):
+
+`sudo dmesg {{[-w|--follow]}}`
+
+- Show kernel messages emitted in the last hour:
+
+`sudo dmesg --since "1 hour ago"`
+
+- Show kernel messages with timestamps as differences from local time:
+
+`sudo dmesg {{[-e|--reltime]}}`
+
+- Show kernel messages with a timestamp for each message:
+
+`sudo dmesg {{[-T|--ctime]}}`
+
+- Colorize output:
+
+`sudo dmesg {{[-L|--color]}}`

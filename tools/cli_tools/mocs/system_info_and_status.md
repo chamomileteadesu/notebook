@@ -11,7 +11,6 @@
 - [[journalctl]]
 - [[localectl]]
 - [[lscpu]]
-- [[lsmod]]
 - [[lsof]]
 - [[lspci]]
 - [[lsusb]]

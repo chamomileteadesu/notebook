@@ -2,6 +2,7 @@
 
 - [[home-manager]]
 - [[nh]]
+- [[nix]]
 - [[nix-collect-garbage]]
 - [[nix-env]]
 - [[nix-flake]]

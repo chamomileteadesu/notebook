@@ -1,5 +1,7 @@
 # Markdown
 
+Table of contents:
+
 - [Markdown](#markdown)
   - [Inline HTML](#inline-html)
   - [TODO List](#todo-list)
@@ -108,16 +110,16 @@ Code:
 Effect:
 
 > Curabitur blandit tempus ardua ridiculus sed magna.
-
+>
 > [!note]
 > Cras mattis iudicium purus sit amet fermentum.
-
+>
 > [!warning]
 > Curabitur blandit tempus ardua ridiculus sed magna.
-
+>
 > [!tip]
 > Pellentesque habitant morbi tristique senectus et netus.
-
+>
 > [!caution]
 > Ullamco laboris nisi ut aliquid ex ea commodi consequat.
 

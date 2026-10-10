@@ -1,12 +1,15 @@
 # CLI Tools
 
-這個部分整理了一些常用的 CLI 工具:
+This article compiles some commonly used CLI tools:
 
 - [[archive_and_compression|Archive and Compression]]
+- [[archlinux_system_management|Archlinux System Management]]
+- [[android_system_manament|Android System Manament]]
 - [[basic_file_operations|Basic File Operations]]
 - [[dev_tools_and_debugging|Dev Tools and Debugging]]
 - [[disk_and_filesystem|Disk and Filesystem]]
 - [[encryption_and_security|Encryption and Security]]
+- [[kernel_and_module_management|Kernel and Module Management]]
 - [[network_and_communication|Network and Communication]]
 - [[nixos_system_management|NixOS System Management]]
 - [[process_and_task_management|Process and Task Management]]

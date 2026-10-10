@@ -27,3 +27,4 @@
 - [[type]]
 - [[ulimit]]
 - [[unset]]
+- [[tty]]
