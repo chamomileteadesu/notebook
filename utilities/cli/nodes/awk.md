@@ -1,7 +1,7 @@
 # awk
 
-> 强大的文本处理工具，用于模式扫描和处理语言。  
-> awk 語法：[[languages/domain_specific_languages/awk/index]]。  
+> 强大的文本处理工具，用于模式扫描和处理语言。
+> awk 語法：[[awk/index]]。
 > 更多信息：<https://manned.org/awk>
 
 - 打印每行的第 1、3 列：

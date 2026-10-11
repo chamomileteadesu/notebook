@@ -1,7 +1,7 @@
 # sed
 
-> 流式文本编辑器，常用于替换、删除、新增文件内容。  
-> 更多語法見：[[languages/domain_specific_languages/sed/index|sed 語法]]。  
+> 流式文本编辑器，常用于替换、删除、新增文件内容。
+> 更多語法見：[[sed/index|sed 語法]]。
 > 更多信息：<https://manned.org/sed>
 
 - 替换文本中的字符串（输出到 stdout）：
