@@ -1,8 +1,8 @@
 # Search and Location
 
-- [[fd]]
+- [[find]]
 - [[fzf]]
-- [[rg]]
+- [[grep]]
 - [[whereis]]
 - [[which]]
 - [[zoxide]]

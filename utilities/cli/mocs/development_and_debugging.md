@@ -6,7 +6,6 @@
 - [[difft]]
 - [[gdb]]
 - [[hexdump]]
-- [[lazygit]]
 - [[ldconfig]]
 - [[ldd]]
 - [[nm]]

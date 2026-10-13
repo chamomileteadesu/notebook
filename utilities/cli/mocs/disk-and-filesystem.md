@@ -1,12 +1,13 @@
 # Disk and Filesystem
 
 - [[btrfs]]
-- [[dd]]
-- [[duf]]
-- [[dust]]
-- [[fdisk]]
 - [[cfdisk]]
+- [[dd]]
+- [[df]]
+- [[du]]
+- [[fdisk]]
 - [[lsblk]]
 - [[mkfs]]
 - [[mount]]
+- [[parted]]
 - [[umount]]

@@ -4,8 +4,6 @@
 - [[cat]]
 - [[head]]
 - [[less]]
-- [[more]]
 - [[nl]]
 - [[od]]
 - [[tail]]
-- [[yazi]]
